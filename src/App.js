@@ -12,6 +12,8 @@ import {
   Checkout,
   PrivateRoute
 } from './pages'
+import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
 function App() {
   return (
     <Router>
@@ -19,6 +21,8 @@ function App() {
       <Sidebar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/>
         <Route path='about' element={<About/>}/>
         <Route path='cart' element={<Cart/>}/>
         <Route path='products' element={<Products/>}/>
