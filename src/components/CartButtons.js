@@ -8,10 +8,11 @@ import { useUserContext } from "../context/user_context";
 
 const CartButtons = () => {
   const { closeSidebar } = useProductsContext();
-  const { total_items } = useCartContext();
+  const { total_items, clearCart } = useCartContext();
   const { isAuthenticated, myUser ,setIsAuthenticated, setMyUser,auth, signOut} = useUserContext();
   const handleLogout= () =>{
     signOut(auth).then(() => {
+      clearCart();
       setIsAuthenticated(false);
       setMyUser(null);
     }).catch((error) => {

@@ -1,13 +1,16 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {getAuth,signOut} from 'firebase/auth'
+const apiKey = process.env.REACT_APP_AUTH_KEY;
+const authDomain = process.env.REACT_APP_AUTH_DOMAIN;
+const appId= process.env.REACT_APP_AUTH_CLIENT_ID;
 const firebaseConfig = {
-  apiKey: "AIzaSyBtVQl7SVrxsJUkpn1lQXMWV-5AbDTLdro",
-  authDomain: "cartify-96da7.firebaseapp.com",
+  apiKey,
+  authDomain,
   projectId: "cartify-96da7",
   storageBucket: "cartify-96da7.appspot.com",
   messagingSenderId: "1000822768902",
-  appId: "1:1000822768902:web:e3507d96e06e6c48954a87",
+  appId,
   measurementId: "G-C56XBTMF4D"
 };
 
