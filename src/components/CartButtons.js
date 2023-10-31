@@ -29,8 +29,8 @@ const CartButtons = () => {
       </Link>
       {!isAuthenticated ? (
         <button type="button" className="auth-btn">
-          <Link className="auth-btn" to={"/signup"}>
-            Signup <FaUserPlus />
+          <Link className="auth-btn" to={"/login"}>
+            Login <FaUserPlus />
           </Link>
         </button>
       ) : (

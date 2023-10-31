@@ -9,11 +9,6 @@ import styles from "./Signup.module.css";
 
 function Signup() {
   const navigate = useNavigate();
-  // const [values, setValues] = useState({
-  //   name: "",
-  //   email: "",
-  //   pass: "",
-  // });
   const [name,setName] = useState("");
   const [email,setEmail] = useState("");
   const [pass,setPass] = useState("");
